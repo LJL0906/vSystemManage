@@ -1,0 +1,28 @@
+/* $themeColor: #2569d8; // 主题蓝色
+$textGayColor: #7d8592; // 文字灰色
+$textLightColor: #ffffff; // 文字白色
+$textDarkColor: #071428; // 文字黑色
+$bgGayColor: #f2f4f8; // 背景灰色
+
+// 设置滚动条的样式
+.scrollThin::-webkit-scrollbar {
+  width: 2px;
+}
+
+.scrollThin::-webkit-scrollbar-thumb {
+  background: $themeColor;
+  border-radius: 16px;
+}
+
+.scrollThin::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 16px;
+}
+
+/* 针对不支持::-webkit-scrollbar-*的浏览器的样式调整 */
+@supports not (selector(::-webkit-scrollbar)) {
+  .scrollThin {
+    scrollbar-width: none;
+    scrollbar-color: auto;
+  }
+}

@@ -28,14 +28,15 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @import "./src/assets/styles/global.scss";
-          @import "./src/assets/styles/math.scss";
+          @import "./src/assets/style/global.scss";
+          @import "./src/assets/style/math.scss";
         `
       }
     }
   },
   server: {
     open: true,
-    host: true
+    host: true,
+    port: 8888
   }
 });
